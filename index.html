@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Répertoire des Associations</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Répertoire des Associations</h1>
+  </header>
+  <main>
+    <section>
+      <div id="results">
+        <div>
+          <input type="text" id="search-input" placeholder="Rechercher une association..." />
+          <div id="associations-list">
+            <!-- Les associations seront listées ici -->
+            <div>
+              <h2>Nom asso</h2>
+              <p>Description et autres informations...</p>
+            </div>
+            <div>
+              <h2>Nom asso</h2>
+              <p>Description et autres informations...</p>
+            </div>
+            <div>
+              <h2>Nom asso</h2>
+              <p>Description et autres informations...</p>
+            </div>
+          </div>
+        </div>
+        <div class="map" id="map">
+          <p>C'est la map</p>
+          <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Recherche ton assos !</p>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+</html>
