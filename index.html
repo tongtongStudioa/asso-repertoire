@@ -18,16 +18,33 @@
     </header>
     <main>
       <section id="section1">
-        <input
-          type="text"
-          id='search-input'
-          placeholder="Rechercher une association..."
-        />
+        <div id="filters">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Rechercher une association..."
+          />
+          <div>
+            <input type="checkbox" id="hasWebsite" />
+            <label for="hasWebsite">Only associations with a website</label>
+          </div>
+          <div>
+            <label for="theme">Theme:</label>
+            <select id="theme">
+              <option value="">All themes</option>
+              <option value="Sport">Sport</option>
+              <option value="Education">Education</option>
+              <option value="Culture">Culture</option>
+              <option value="Health">Health</option>
+              <!-- Add more themes as needed -->
+            </select>
+          </div>
+        </div>
         <div id="results">
-          <div id='associations-list'>
+          <div id="associations-list">
             <!-- Les associations seront listées ici -->
           </div>
-          <div id='map'></div>
+          <div id="map"></div>
         </div>
       </section>
     </main>
