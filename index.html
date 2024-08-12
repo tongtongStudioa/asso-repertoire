@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Un site pour répertorier toute les associations de France facilement, 
+    trouver des associations qui te correspondent et connecter les associations similaires entre elles pour une synergie complète !">
+    <meta name="keywords" content="répertoire,inventaire,recherche,associations,aide,solidarité">
+    <meta name="author" content="tongtongStudioa">
+    <link rel="canonical" href="https://tongtongStudioa.github.io/asso-repertoire/">
     <title>Répertoire des Associations</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -12,8 +17,8 @@
     <header>
       <h1>Répertoire des Associations</h1>
       <p>
-        Un site web pour chercher si il n'existe pas une association disponible
-        pour t'aider !
+        Trouver une association disponible
+        pour t'aider ou participer à ces missions; Connecter les associations et les citoyens entre eux.
       </p>
     </header>
     <main>
@@ -26,16 +31,18 @@
           />
           <div>
             <input type="checkbox" id="hasWebsite" />
-            <label for="hasWebsite">Only associations with a website</label>
+            <label for="hasWebsite">Seulement les associations avec un site internet</label>
           </div>
           <div>
-            <label for="theme">Theme:</label>
+            <label for="theme">Thème</label>
             <select id="theme">
-              <option value="">All themes</option>
+              <option value="">Tous les thèmes</option>
               <option value="Sport">Sport</option>
-              <option value="Education">Education</option>
-              <option value="Culture">Culture</option>
-              <option value="Health">Health</option>
+              <option value="Production">Production et services</option>
+              <option value="Education">Education et formation</option>
+              <option value="Culture">Culture et loisirs</option>
+              <option value="Environnement">Environnement et patrimoine</option>
+              <option value="Health">Santé et action sociale</option>
               <!-- Add more themes as needed -->
             </select>
           </div>
@@ -50,6 +57,10 @@
     </main>
     <footer>
       <p>© 2024 Répertoire des Associations</p>
+      <div display="flex" flex-direction="row" aligns-items="center">
+        <img src="\img\Github-Logo.png" width="48px" height="24px">
+        <a href="https://github.com/tongtongStudioa/asso-repertoire">GitHub</a>
+      </div>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="js/map.js"></script>

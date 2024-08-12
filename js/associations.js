@@ -22,7 +22,7 @@ const displayAssociations = (associations) => {
         listItem.className = 'association-item';
         listItem.setAttribute('data-lat', association.lat);
         listItem.setAttribute('data-lon', association.lon);
-        listItem.innerHTML = `<h2>${association.title}</h2>`;
+        listItem.innerHTML = `<h4>${association.title}</h4>`;
         if (association.object)
             listItem.innerHTML += `<p class='object-text'>${capitalizeFirstLetter(association.object)}</p>`
         if (association.street_name_manager && association.pc_address_manager)

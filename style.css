@@ -34,7 +34,7 @@ header,footer {
 /* Layout styles */
 #filters {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     font-size: 18px;
     padding: 20px;
@@ -43,15 +43,17 @@ header,footer {
 
 #filters div {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    align-content: center;
     margin-bottom: 10px;
 }
 
-#filters label {
+/*#filters label {
     font-weight: bold;
     font-size: 18px;
     margin-right: 10px;
-}
+}*/
 
 #filters select,
 #filters input[type="checkbox"] {
@@ -123,7 +125,8 @@ header,footer {
 .object-text {
     display: -webkit-box;        /* Utilise le modèle de boîte flexible de Webkit */
     -webkit-box-orient: vertical; /* Définit l'orientation de la boîte en vertical */
-    -webkit-line-clamp: 3;       /* Limite le nombre de lignes affichées à 3 */
+    -webkit-line-clamp: 3;  
+    line-clamp: 3;               /* Limite le nombre de lignes affichées à 3 */
     overflow: hidden;            /* Cache le texte qui dépasse */
     text-overflow: ellipsis;     /* Ajoute une ellipse (...) à la fin du texte tronqué */
     white-space: normal;         /* Assure que l'espace blanc est traité normalement */
